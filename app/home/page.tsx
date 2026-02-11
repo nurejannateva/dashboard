@@ -4,154 +4,200 @@ const Homepage = () => {
   return (
     <div className="font-[Poppins]">
 
-      
-      <section className="relative">
-        {/* GIRLS BACKGROUND IMAGE */}
-        <img
-          src="/images/girlsbackground.png"
-          alt="background"
-          className="absolute right-0 top-0 w-[766px] h-[872px] z-10"
-        />
+      {/* 111 */}
+      <section className="relative overflow-hidden">
+  
+  {/* Background Girl Image */}
+  <img
+    src="/images/girlsbackground.png"
+    alt="bg"
+    className="absolute right-0 top-0 w-[60%] max-w-[700px] hidden lg:block"
+  />
 
-        {/* NAVBAR */}
-        <nav className="container mx-auto px-4 py-8 flex justify-between items-center relative z-40 bg-transparent">
+  {/* ================= NAVBAR ================= */}
+  <nav className="container mx-auto px-6 py-6 flex justify-between items-center relative z-40">
+    
+    <img
+      src="/images/jadooo.png"
+      alt="logo"
+      className="w-[115px]"
+    />
 
+    <div className="hidden md:flex items-center gap-6 text-[16px] font-medium text-gray-900">
+      <a href="#" className="hover:text-orange-500">Destinations</a>
+      <a href="#" className="hover:text-orange-500">Hotels</a>
+      <a href="#" className="hover:text-orange-500">Flights</a>
+      <a href="#" className="hover:text-orange-500">Bookings</a>
+      <a href="#" className="hover:text-orange-500">Login</a>
+
+      <button className="border border-gray-900 rounded-md px-4 py-2 hover:bg-gray-900 hover:text-white transition">
+        Sign up
+      </button>
+
+      <select className="bg-transparent outline-none cursor-pointer border border-gray-300 rounded-md px-2 py-1">
+        <option>EN</option>
+        <option>BN</option>
+      </select>
+    </div>
+  </nav>
+
+  {/* ================= HERO ================= */}
+  <div className="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center relative z-20">
+    
+    {/* LEFT CONTENT */}
+    <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
+
+      <h4 className="text-[#DF6951] uppercase font-bold tracking-widest text-sm md:text-base mb-4">
+        Best Destinations around the world
+      </h4>
+
+      <h1 className="font-serif font-bold text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">
+        Travel,{" "}
+        <span className="relative inline-block">
+          <span className="relative z-10">enjoy</span>
           <img
-            src="/images/jadooo.png"
-            alt="background"
-            className=" w-[114.91px] h-[33.99px] z-10"
+            src="/images/enjoybk.png"
+            alt=""
+            className="absolute left-0 bottom-2 w-full h-[10px] md:h-[14px] -z-10"
           />
-          <div className="hidden md:flex space-x-4 items-center text-[17px] font-google  font-sans font-medium text-gray-900">
-            <a href="#" className="hover:text-orange-500">Destinations</a>
-            <a href="#" className="hover:text-orange-500">Hotels</a>
-            <a href="#" className="hover:text-orange-500">Flights</a>
-            <a href="#" className="hover:text-orange-500">Bookings</a>
-            <a href="#" className="hover:text-orange-500">Login</a>
+        </span>{" "}
+        <br />
+        and live a new <br />
+        and full life
+      </h1>
 
-            <button className="border border-gray-900 rounded-md px-3 py-2 hover:bg-gray-900 hover:text-white transition">
-              Sign up
-            </button>
+      <p className="text-[#5E6282] text-base md:text-lg max-w-md mx-auto lg:mx-0">
+        Built Wicket longer admire do barton vanity itself do in it. 
+        Preferred to sportsmen it engrossed listening.
+      </p>
 
-            {/* Language Dropdown */}
-            <select className="bg-transparent outline-none cursor-pointer border border-gray-300 rounded-md px-2 py-1">
-              <option>EN</option>
-              <option>BN</option>
-            </select>
+      {/* BUTTONS */}
+      <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6 mt-8">
+
+        <button className="bg-[#f1a501] text-white px-6 py-3 rounded-xl shadow-lg hover:opacity-90 transition">
+          Find out more
+        </button>
+
+        <button className="flex items-center gap-3 group">
+          <div className="bg-[#df6951] p-4 rounded-full shadow-lg group-hover:scale-105 transition">
+            <div className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[10px] border-l-white ml-1" />
           </div>
-        </nav>
+          <span className="text-gray-500 font-medium">Play Demo</span>
+        </button>
 
-        {/* HERO CONTENT */}
-        <div className="container mx-auto py-[90px] flex flex-col lg:flex-row items-center relative -mt-24 z-20">
+      </div>
+    </div>
 
-          {/* LEFT */}
-          <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0 max-w-lg">
-            <h4 className="text-[#DF6951] uppercase font-poppins font-bold tracking-widest text-[20px] mb-6">
-              Best Destinations around the world
-            </h4>
-
-
-            <h1 className="font-[Volkhov] font-bold text-[87px] md:text-7xl leading-tight mb-8">
-              Travel,{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">enjoy</span>
-                <img
-                  src="/images/enjoybk.png"
-                  className="absolute left-0 bottom-[10px] -z-10 w-full h-[12px] md:h-[16px] object-cover"
-                  alt=""
-                />
-              </span>{' '}
-              <br />
-              and live a new <br />
-              and full life
-            </h1>
-            <p className="font-poppins font-medium text-[16px] text-[#5E6282]">
-              Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
-            </p>
-            <div className="flex items-center gap-6 py-[40px]">
-              {/* Yellow Button */}
-              <button className="bg-[#f1a501] text-white px-7 py-4 rounded-xl shadow-[0_15px_30px_rgba(241,165,1,0.4)] hover:opacity-90">
-                Find out more
-              </button>
-
-              {/* Play Button */}
-              <button className="flex items-center gap-3 group">
-                <div className="bg-[#df6951] p-4 rounded-full shadow-[0_15px_25px_rgba(223,105,81,0.4)] group-hover:scale-105 transition">
-                  <div className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[10px] border-l-white ml-1" />
-                </div>
-                <span className="text-gray-500 font-medium">Play Demo</span>
-              </button>
-            </div>
-          </div>
-          <div className="lg:w-1/2 relative flex justify-center items-center">
-            <img
-              src="/images/plane.png"
-              alt="plane"
-              className="absolute top-[170px] left-[-70px] w-[137px] h-[95px] z-20"
-            />
-            <img
-              src="/images/plane.png"
-              alt="plane"
-              className="absolute top-[300px] left-[410px] w-[137px] h-[95px] z-20"
-            />
-
-            {/* Girl */}
-            <img
-              src="/images/girl.png"
-              alt="Traveler"
-              className="w-[765px] h-[764px] relative top-[10px] z-30"
-            />
-          </div>
-        </div>
-      </section>
-
+    {/* RIGHT IMAGE */}
+    <div className="lg:w-1/2 relative flex justify-center">
 
       <img
-        src="/images/+img.png"
-        alt="background"
-        className="absolute right-0  w-[153px] h-[166px] z-10"
+        src="/images/plane.png"
+        alt="plane"
+        className="absolute top-10 left-0 w-16 md:w-24 hidden md:block"
       />
-      <section className="relative bg-white py-20 px-6 overflow-hidden font-sans">
-        <div className="text-center mb-16">
-          <span className="text-gray-500 uppercase tracking-widest font-[poppins] font-semibold text-[18px]">Category</span>
-          <h2 className="font-[Volkhov] font-bold text-[50px] text-slate-900 mt-2">
-            We Offer Best Services
-          </h2>
+
+      <img
+        src="/images/plane.png"
+        alt="plane"
+        className="absolute bottom-10 right-10 w-16 md:w-24 hidden md:block"
+      />
+
+      <img
+        src="/images/girl.png"
+        alt="Traveler"
+        className="w-full max-w-[500px] lg:max-w-[650px] relative z-30"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+ 
+    {/* 22222222 */}
+      <section className="relative bg-white py-16 px-6 overflow-hidden">
+
+  {/* Top Right Shape */}
+  <img
+    src="/images/+img.png"
+    alt=""
+    className="absolute right-0 top-0 w-20 md:w-32 opacity-40"
+  />
+
+  <div className="max-w-7xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-14">
+      <span className="text-gray-500 uppercase tracking-widest font-semibold text-sm md:text-base">
+        Category
+      </span>
+      <h2 className="font-serif font-bold text-3xl md:text-5xl text-slate-900 mt-2">
+        We Offer Best Services
+      </h2>
+    </div>
+
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      {/* Card 1 */}
+      <div className="group bg-white p-8 text-center rounded-3xl transition duration-300 hover:shadow-2xl">
+        <div className="relative mb-6">
+          <div className="absolute top-0 right-6 w-12 h-12 bg-orange-50 rounded-tr-2xl rounded-bl-xl -z-10"></div>
+          <img src="/images/weather.png" alt="" className="h-20 mx-auto object-contain" />
         </div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 items-stretch">
-          <div className="group relative p-10 text-center transition-all duration-300 hover:bg-white hover:shadow-2xl hover:rounded-[40px]">
-            <div className="relative w-20 h-20 mx-auto mb-6">
-              <div className="absolute top-0 right-0 w-12 h-12 bg-orange-50 rounded-tr-2xl rounded-bl-xl -z-10"></div>
-              <img src="/images/weather.png" alt="Weather" className="w-[92px] h-[78px] object-contain mx-auto" />
-            </div>
-            <h3 className="text-lg font-bold text-slate-800 mb-3">Calculated Weather</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">Built Wicket longer admire do barton vanity itself do in it.</p>
-          </div>
-          <div className="relative p-10 text-center bg-white shadow-2xl rounded-[40px] z-10">
-            <div className="group absolute -bottom-4 -left-4 w-20 h-20 bg-[#DF6951] rounded-2xl rounded-tr-[40px] -z-10]"></div>
-            <div className="">
-              <img src="/images/best.png" alt="Flights" className="w-[166.87px] h-[153.33px] object-contain mx-auto" />
-            </div>
-            <h3 className="text-lg font-bold text-slate-800 mb-3">Best Flights</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">Engrossed listening. Park gate sell they west hard for the.</p>
-          </div>
-          <div className="group relative p-10 text-center transition-all duration-300 hover:bg-white hover:shadow-2xl hover:rounded-[40px]">
-            <div className="relative w-20 h-20 mx-auto mb-6">
-              <div className="absolute top-0 right-0 w-12 h-12 bg-orange-50 rounded-tr-2xl rounded-bl-xl -z-10"></div>
-              <img src="/images/local.png" alt="Events" className="w-[67px] h-[75px] object-contain mx-auto" />
-            </div>
-            <h3 className="text-lg font-bold text-slate-800 mb-3">Local Events</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
-          </div>
-          <div className="group relative p-10 text-center transition-all duration-300 hover:bg-white hover:shadow-2xl hover:rounded-[40px]">
-            <div className="relative w-20 h-20 mx-auto mb-6">
-              <div className="absolute top-0 right-0 w-12 h-12 bg-orange-50 rounded-tr-2xl rounded-bl-xl -z-10"></div>
-              <img src="/images/Customization.png" alt="Customization" className="w-[77px] h-[66px] object-contain mx-auto" />
-            </div>
-            <h3 className="text-lg font-bold text-slate-800 mb-3">Customization</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">We deliver outsourced aviation services for military customers</p>
-          </div>
+        <h3 className="font-bold text-lg text-slate-800 mb-3">
+          Calculated Weather
+        </h3>
+        <p className="text-gray-500 text-sm">
+          Built Wicket longer admire do barton vanity itself do in it.
+        </p>
+      </div>
+
+      {/* Card 2 (Active Style) */}
+      <div className="relative bg-white p-8 text-center rounded-3xl shadow-xl">
+        <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-[#DF6951] rounded-2xl -z-10"></div>
+        <img src="/images/best.png" alt="" className="h-20 mx-auto mb-6 object-contain" />
+        <h3 className="font-bold text-lg text-slate-800 mb-3">
+          Best Flights
+        </h3>
+        <p className="text-gray-500 text-sm">
+          Engrossed listening. Park gate sell they west hard for the.
+        </p>
+      </div>
+
+      {/* Card 3 */}
+      <div className="group bg-white p-8 text-center rounded-3xl transition duration-300 hover:shadow-2xl">
+        <div className="relative mb-6">
+          <div className="absolute top-0 right-6 w-12 h-12 bg-orange-50 rounded-tr-2xl rounded-bl-xl -z-10"></div>
+          <img src="/images/local.png" alt="" className="h-20 mx-auto object-contain" />
         </div>
-      </section>
+        <h3 className="font-bold text-lg text-slate-800 mb-3">
+          Local Events
+        </h3>
+        <p className="text-gray-500 text-sm">
+          Barton vanity itself do in it. Preferd to men it engrossed listening.
+        </p>
+      </div>
+
+      {/* Card 4 */}
+      <div className="group bg-white p-8 text-center rounded-3xl transition duration-300 hover:shadow-2xl">
+        <div className="relative mb-6">
+          <div className="absolute top-0 right-6 w-12 h-12 bg-orange-50 rounded-tr-2xl rounded-bl-xl -z-10"></div>
+          <img src="/images/Customization.png" alt="" className="h-20 mx-auto object-contain" />
+        </div>
+        <h3 className="font-bold text-lg text-slate-800 mb-3">
+          Customization
+        </h3>
+        <p className="text-gray-500 text-sm">
+          We deliver outsourced aviation services for military customers.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -242,104 +288,104 @@ const Homepage = () => {
       <section className="py-20 px-[100px] max-w-7xl mx-auto font-sans bg-white overflow-hidden">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
 
-          
+          {/* 333333 */}
           <div className="lg:w-1/2 space-y-8">
             <div>
-              <p className="text-gray-500 font-semibold font-poopins text-[18px] mb-2">Easy and Fast</p>
-              <h2 className="text-[50px] md:text-5xl lg:text-[50px] font-bold font-[Volkhov] leading-tight">
-                Book Your Next Trip <br /> In 3 Easy Steps
-              </h2>
+              <p className="text-gray-500 font-semibold font-[Poppins] text-lg sm:text-xl mb-2">
+  Easy and Fast
+</p>
+
+<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[50px] font-bold font-[Volkhov] leading-snug sm:leading-snug md:leading-tight lg:leading-tight">
+  Book Your Next Trip <br /> In 3 Easy Steps
+</h2>
+
+
             </div>
 
             <div className="space-y-6">
-              {/* Step 1 */}
-              <div className="flex items-start gap-5">
-                <div className="bg-[#F0BB1F] p-3 rounded-xl  shadow-lg">
+  {/* Step 1 */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
+    <div className="bg-[#F0BB1F] p-3 rounded-xl shadow-lg flex-shrink-0">
+      <img src="/icons/icon1.png" alt="home icon" className="w-6 h-6 sm:w-7 sm:h-7" />
+    </div>
+    <div>
+      <h4 className="font-bold font-[Poppins] text-[#5E6282] text-base sm:text-lg">
+        Choose Destination
+      </h4>
+      <p className="text-gray-500 max-w-full sm:max-w-sm text-sm sm:text-base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+      </p>
+    </div>
+  </div>
 
-                  <img
-                    src="/icons/icon1.png"
-                    alt="home icon"
-                    className="w-6 h-6"
-                  />
+  {/* Step 2 */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
+    <div className="bg-[#F15A2B] p-3 rounded-xl shadow-lg flex-shrink-0">
+      <img src="/icons/icon2.png" alt="payment icon" className="w-6 h-6 sm:w-7 sm:h-7" />
+    </div>
+    <div>
+      <h4 className="font-bold font-[Poppins] text-[#5E6282] text-base sm:text-lg">
+        Make Payment
+      </h4>
+      <p className="text-gray-500 max-w-full sm:max-w-sm text-sm sm:text-base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+      </p>
+    </div>
+  </div>
 
-                </div>
-                <div>
-                  <h4 className="font-bold font-[poppins] text-[#5E6282] text-[16px]">Choose Destination</h4>
-                  <p className="text-gray-500 max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
-                </div>
-              </div>
+  {/* Step 3 */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5">
+    <div className="bg-[#006380] p-3 rounded-xl shadow-lg flex-shrink-0">
+      <img src="/icons/icon3.png" alt="airport icon" className="w-6 h-6 sm:w-7 sm:h-7" />
+    </div>
+    <div>
+      <h4 className="font-bold font-[Poppins] text-[#5E6282] text-base sm:text-lg">
+        Reach Airport on Selected Date
+      </h4>
+      <p className="text-gray-500 max-w-full sm:max-w-sm text-sm sm:text-base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+      </p>
+    </div>
+  </div>
+</div>
 
-              {/* Step 2 */}
-              <div className="flex items-start gap-5">
-                <div className="bg-[#F15A2B] p-3 rounded-xl shadow-lg">
-
-                  <img
-                    src="/icons/icon2.png"
-                    alt="home icon"
-                    className="w-6 h-6"
-                  />
-
-                </div>
-                <div>
-                  <h4 className="font-bold font-[poppins] text-[#5E6282] text-[16px]">Make Payment</h4>
-                  <p className="text-gray-500 max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="flex items-start gap-5">
-                <div className="bg-[#006380] p-3 rounded-xl shadow-lg">
-
-                  <img
-                    src="/icons/icon3.png"
-                    alt="home icon"
-                    className="w-6 h-6"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#5E6282] text-lg">Reach Airport on Selected Date</h4>
-                  <p className="text-gray-500 max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
-                </div>
-              </div>
-            </div>
           </div>
 
 
           <div className="lg:w-1/2 relative lg:pr-12">
             
             <div className="bg-white rounded-[2.5rem] p-6 shadow-2xl max-w-sm mx-auto z-10 relative">
-              <img src="/images/redgirl.png" alt="Greece" className="w-full h-48 object-cover rounded-3xl mb-6" />
-              <h3 className="text-xl font-bold text-black mb-2">Trip To Greece</h3>
-              <p className="text-gray-500 font-medium mb-4">14-29 June | by Robbin joseph</p>
+            <img
+  src="/images/redgirl.png"
+  alt="Greece"
+  className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover rounded-3xl mb-4"
+/>
 
-              <div className="flex gap-4 mb-6">
-                <span className="bg-gray-100 p-2 rounded-full text-gray-600 h-[36px] w-[36px] flex items-center justify-center">
-                  <img
-                    src="/icons/icon4.png"
-                    alt="home icon"
-                    className="w-[14px] h-[14px]"
-                  />
+<h3 className="text-lg sm:text-xl md:text-2xl font-bold text-black mb-2">
+  Trip To Greece
+</h3>
 
+<p className="text-gray-500 font-medium text-sm sm:text-base mb-4">
+  14-29 June | by Robbin Joseph
+</p>
 
-                </span>
+              <div className="flex gap-3 sm:gap-4 mb-6">
+  {/* Icon 1 */}
+  <span className="bg-gray-100 p-2 sm:p-3 rounded-full text-gray-600 h-9 w-9 sm:h-10 sm:w-10 flex items-center justify-center">
+    <img src="/icons/icon4.png" alt="icon 1" className="w-3 h-3 sm:w-4 sm:h-4" />
+  </span>
 
-                <span className="bg-gray-100 p-2 rounded-full text-gray-600 h-[36px] w-[36px] flex items-center justify-center">
-                  <img
-                    src="/icons/icon5.png"
-                    alt="home icon"
-                    className="w-[14px] h-[14px]"
-                  />
-                </span>
+  {/* Icon 2 */}
+  <span className="bg-gray-100 p-2 sm:p-3 rounded-full text-gray-600 h-9 w-9 sm:h-10 sm:w-10 flex items-center justify-center">
+    <img src="/icons/icon5.png" alt="icon 2" className="w-3 h-3 sm:w-4 sm:h-4" />
+  </span>
 
-                <span className="bg-gray-100 p-2 rounded-full text-gray-600 h-[36px] w-[36px] flex items-center justify-center">
-                  <img
-                    src="/icons/icon6.png"
-                    alt="home icon"
-                    className="w-[14px] h-[14px]"
-                  />
+  {/* Icon 3 */}
+  <span className="bg-gray-100 p-2 sm:p-3 rounded-full text-gray-600 h-9 w-9 sm:h-10 sm:w-10 flex items-center justify-center">
+    <img src="/icons/icon6.png" alt="icon 3" className="w-3 h-3 sm:w-4 sm:h-4" />
+  </span>
+</div>
 
-                </span>
-              </div>
 
               <div className="flex justify-between items-center text-gray-500 font-medium">
                 <div className="flex items-center gap-2">
@@ -367,32 +413,47 @@ const Homepage = () => {
 
 <div className="absolute -right-2 md:-right-6 lg:-right-10 bottom-16 z-20">
 <div
-                className="w-[354px] h-[367px] bg-no-repeat bg-contain bg-center"
-                style={{ backgroundImage: "url('/images/blueshadow.png')" }}
-              >
-              </div>
- <div className="bg-white p-4 rounded-2xl shadow-xl flex gap-4 w-60 md:w-64 border border-gray-50">
+  className="w-80 sm:w-96 md:w-[354px] h-80 sm:h-96 md:h-[367px] bg-no-repeat bg-contain bg-center mx-auto"
+  style={{ backgroundImage: "url('/images/blueshadow.png')" }}
+></div>
+
+<div className="bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 w-56 sm:w-60 md:w-64 border border-gray-50">
+  {/* Image or Icon */}
                 <img
-                  src="/images/image.o.png"
-                  alt="Rome"
-                  className="w-12 h-12 rounded-full object-cover"
-                />
+  src="/images/image.o.png"
+  alt="Rome"
+  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover"
+/>
 
-                <div className="flex-1">
-                  <p className="text-xs text-gray-400 font-bold uppercase">Ongoing</p>
 
-                  <h4 className="text-sm font-bold text-gray-800">
-                    Trip to rome
-                  </h4>
 
-                  <p className="text-xs font-bold text-blue-700 mt-1 mb-2">
-                    40% <span className="text-gray-800 font-medium">completed</span>
-                  </p>
+{/* 44444 */}
+   <div className="flex-1">
+  {/* Status */}
+  <p className="text-xs sm:text-sm text-gray-400 font-bold uppercase">
+    Ongoing
+  </p>
 
-                  <div className="w-full bg-gray-100 h-1.5 rounded-full">
-                    <div className="bg-blue-600 h-1.5 rounded-full w-[40%]"></div>
-                  </div>
-                </div>
+  {/* Trip Title */}
+  <h4 className="text-sm sm:text-base font-bold text-gray-800">
+    Trip to Rome
+  </h4>
+
+  {/* Progress Text */}
+  <p className="text-xs sm:text-sm font-bold text-blue-700 mt-1 mb-2">
+    40% <span className="text-gray-800 font-medium">completed</span>
+  </p>
+
+  {/* Progress Bar */}
+  <div className="w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
+    <div
+      className="bg-blue-600 h-1.5 rounded-full"
+      style={{ width: '40%' }}
+    ></div>
+  </div>
+</div>
+
+
               </div>
             </div>
 
@@ -408,57 +469,65 @@ const Homepage = () => {
 
         <div className="flex flex-wrap justify-center items-center gap-12">
           {/* Single Box */}
-          <div className="w-[170px] h-[170px] flex justify-center items-center bg-white rounded-xl shadow-gray-200  transition-all duration-300  hover:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
-            <img
-              src="/icons/axon.png"
-              alt="Axon"
-              className="w-[130px] h-[130px] object-cover rounded-full"
-            />
-          </div>
+          <div className="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 flex justify-center items-center bg-white rounded-xl shadow-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
+  <img
+    src="/icons/axon.png"
+    alt="Axon"
+    className="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover rounded-full"
+  />
+</div>
 
-          <div className="w-[170px] h-[170px] flex justify-center items-center bg-white rounded-xl shadow-gray-200  transition-all duration-300 hover:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
-            <img
-              src="/icons/jetstar.png"
-              alt="Jetstar"
-              className="w-[130px] h-[130px] object-cover rounded-full"
-            />
-          </div>
 
-          <div className="w-[170px] h-[170px] flex justify-center items-center bg-white rounded-xl shadow-gray-200 transition-all duration-300  hover:scale-110 hover:shadow-xl">
-            <img
-              src="/icons/expedia.png"
-              alt="Expedia"
-              className="w-[130px] h-[130px] object-cover rounded-full"
-            />
-          </div>
-
-          <div className="w-[170px] h-[170px] flex justify-center items-center bg-white rounded-xl shadow-gray-200  transition-all duration-300 over:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
-            <img
-              src="/icons/qantas.png"
-              alt="Qantas"
-              className="w-[162px] h-[32px] object-cover rounded-full"
-            />
-          </div>
+         <div className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 flex justify-center items-center bg-white rounded-xl shadow-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
+  <img
+    src="/icons/jetstar.png"
+    alt="Jetstar"
+    className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover rounded-full"
+  />
+</div>
 
 
 
-          <div className="w-[170px] h-[170px] flex justify-center items-center bg-white rounded-xl shadow-gray-200  transition-all duration-300 hover:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
-            <img
-              src="/icons/alitalia.png"
-              alt="Alitalia"
-              className="w-[94px] h-[21px]  rounded-full"
-            />
-          </div>
+
+<div className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 flex justify-center items-center bg-white rounded-xl shadow-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl">
+  <img
+    src="/icons/expedia.png"
+    alt="Expedia"
+    className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover rounded-full"
+  />
+</div>
+
+<div className="w-36 h-20 sm:w-44 sm:h-24 md:w-48 md:h-28 lg:w-52 lg:h-32 flex justify-center items-center bg-white rounded-xl shadow-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
+  <img
+    src="/icons/qantas.png"
+    alt="Qantas"
+    className="w-32 h-8 sm:w-36 sm:h-10 md:w-40 md:h-12 lg:w-44 lg:h-14 object-contain rounded-full"
+  />
+</div>
+
+
+
+
+         <div className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 flex justify-center items-center bg-white rounded-xl shadow-gray-200 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:grayscale-0 hover:opacity-100">
+  <img
+    src="/icons/alitalia.png"
+    alt="Alitalia"
+    className="w-20 h-5 sm:w-24 sm:h-6 md:w-28 md:h-7 lg:w-32 lg:h-8 object-contain rounded-full"
+  />
+</div>
+
         </div>
 
+        
 
 
 
-        <img
-          src="/images/+img.png"
-          alt="background"
-          className="absolute mt-[700px] right-0  w-[153px] h-[166px] z-10"
-        />
+<img
+  src="/images/+img.png"
+  alt="background"
+  className="absolute right-0 mt-[40rem] sm:mt-[45rem] md:mt-[50rem] lg:mt-[55rem] w-32 sm:w-36 md:w-40 lg:w-44 h-36 sm:h-40 md:h-44 lg:h-48 z-10 object-contain"
+/>
+
 
 
 
@@ -481,30 +550,28 @@ const Homepage = () => {
           </div>
           <div className="bg-[#DFD7F9] rounded-tl-[100px] rounded-br-2xl rounded-tr-2xl rounded-bl-2xl p-16 text-center relative overflow-hidden">
             {/* Right top image */}
-            <div
-              className="absolute top-0 right-0 w-[264px] h-[351.52px]"
-              style={{
-                backgroundImage: "url('/images/circle.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
+           {/* Top Right Circle */}
+<div
+  className="absolute top-0 right-0 w-52 h-52 sm:w-64 sm:h-64 md:w-[264px] md:h-[352px] bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/images/circle.png')",
+  }}
+></div>
 
-            <div
-              className="absolute bottom-0 left-0 w-[361px] h-[480px] opacity-10"
-              style={{
-                backgroundImage: "url('/images/circle2.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
+{/* Bottom Left Circle */}
+<div
+  className="absolute bottom-0 left-0 w-64 h-64 sm:w-80 sm:h-80 md:w-[361px] md:h-[480px] opacity-10 bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/images/circle2.png')",
+  }}
+></div>
 
-              }}
-            ></div>
             <div className="absolute -bottom-20 -left-20 w-64 h-64 border border-indigo-100 rounded-full opacity-50"></div>
             <div className="absolute -bottom-28 -left-28 w-80 h-80 border border-indigo-100 rounded-full opacity-50"></div>
+<h2 className="text-2xl sm:text-3xl md:text-[33px] font-semibold font-[Poppins] text-[#5E6282] max-w-2xl mx-auto leading-snug sm:leading-tight mb-10 text-center">
+  Subscribe to get information, latest news and other interesting offers about Jadoo
+</h2>
 
-            <h2 className="text-[33px] font-semibold font-[poppins] text-[#5E6282] max-w-2xl mx-auto leading-tight mb-10">
-              Subscribe to get information, latest news and other interesting offers about Jadoo
-            </h2>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4">
               <div className="relative w-full max-w-md">
@@ -524,6 +591,8 @@ const Homepage = () => {
                   </svg>
                 </div>
 
+
+{/* 555555 */}
                 <input
                   type="email"
                   placeholder="Your email"
@@ -544,74 +613,101 @@ const Homepage = () => {
       </div>
 
 
-      <footer className="bg-white py-[100px] px-[100px] font-sans">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+     <footer className="bg-white py-16 px-6 md:px-12 lg:px-20 font-poppins">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
 
-          <div className="lg:col-span-1">
-            <h2 className=" font-[medium] font-[poppins] text-[44px] text-gray-900 mb-6">Jadoo.</h2>
-            <p className="text-gray-500 font-[medium] font-[poppins] text-[13px]">
-              Book your trip in minute, get full Control for much longer.
-            </p>
-          </div>
+    {/* Logo & Text */}
+    <div className="text-center md:text-left max-w-sm mx-auto md:mx-0">
+  
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+    Jadoo.
+  </h2>
 
-          <div>
-            <h3 className="font-bold font-[poppins] text-[21px] mb-6">Company</h3>
-            <ul className="space-y-3 text-gray-600 font-medium">
-              <li><a href="#" className="hover:text-gray-900 ">About</a></li>
-              <li><a href="#" className="hover:text-gray-900">Careers</a></li>
-              <li><a href="#" className="hover:text-gray-900">Mobile</a></li>
-            </ul>
-          </div>
+  <p className="text-gray-500 text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose">
+  Book your trip in minutes, get full control for much longer.
+</p>
 
-          <div>
-            <h3 className="font-bold font-[poppins] text-[21px] mb-6">Contact</h3>
-            <ul className="space-y-3 text-gray-600 font-medium">
-              <li><a href="#" className="hover:text-gray-900">Help/FAQ</a></li>
-              <li><a href="#" className="hover:text-gray-900">Press</a></li>
-              <li><a href="#" className="hover:text-gray-900">Affilates</a></li>
-            </ul>
-          </div>
 
-          <div>
-            <h3 className="font-bold font-[poppins] text-[21px] mb-6">More</h3>
-            <ul className="space-y-3 text-gray-600 font-medium">
-              <li><a href="#" className="hover:text-gray-900">Airlinefees</a></li>
-              <li><a href="#" className="hover:text-gray-900">Airline</a></li>
-              <li><a href="#" className="hover:text-gray-900">Low fare tips</a></li>
-            </ul>
-          </div>
+</div>
 
-          <div className="flex flex-col items-start lg:items-center">
-            <div className="flex space-x-4 mb-6">
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full shadow-md bg-white hover:bg-gray-50 transition">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
-              </a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full shadow-lg bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white hover:opacity-90 transition">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.612 6.777 6.973 6.977 1.28.057 1.688.072 4.947.072s3.667-.015 4.947-.072c4.351-.2 6.777-2.62 6.977-6.977.058-1.28.072-1.688.072-4.947s-.015-3.667-.072-4.947c-.2-4.353-2.612-6.777-6.977-6.977C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
-              </a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full shadow-md bg-white hover:bg-gray-50 transition">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
-              </a>
-            </div>
 
-            <p className="text-gray-600 font-medium mb-4 text-center lg:text-left">Discover our app</p>
+    {/* Company */}
+    <div>
+      <h3 className="font-semibold text-lg mb-4">Company</h3>
+      <ul className="space-y-2 text-gray-600 text-sm">
+        <li><a href="#" className="hover:text-black transition">About</a></li>
+        <li><a href="#" className="hover:text-black transition">Careers</a></li>
+        <li><a href="#" className="hover:text-black transition">Mobile</a></li>
+      </ul>
+    </div>
 
-            <div className="flex space-x-3">
-              <a href="#" className="bg-black text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-800 transition">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-6" />
-              </a>
-              <a href="#" className="bg-black text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-800 transition">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" className="h-6" />
-              </a>
-            </div>
-          </div>
-        </div>
+    {/* Contact */}
+    <div>
+      <h3 className="font-semibold text-lg mb-4">Contact</h3>
+      <ul className="space-y-2 text-gray-600 text-sm">
+        <li><a href="#" className="hover:text-black transition">Help/FAQ</a></li>
+        <li><a href="#" className="hover:text-black transition">Press</a></li>
+        <li><a href="#" className="hover:text-black transition">Affiliates</a></li>
+      </ul>
+    </div>
 
-        <div className="mt-16 text-center text-gray-500 text-sm font-medium">
-          All rights reserved@jadoo.co
-        </div>
-      </footer>
+    {/* More */}
+    <div>
+      <h3 className="font-semibold text-lg mb-4">More</h3>
+      <ul className="space-y-2 text-gray-600 text-sm">
+        <li><a href="#" className="hover:text-black transition">Airline Fees</a></li>
+        <li><a href="#" className="hover:text-black transition">Airline</a></li>
+        <li><a href="#" className="hover:text-black transition">Low Fare Tips</a></li>
+      </ul>
+    </div>
 
+    {/* Social & App */}
+    <div className="flex flex-col items-center lg:items-start">
+
+      {/* Social Icons */}
+      <div className="flex space-x-4 mb-6">
+        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full shadow-md bg-white hover:bg-gray-100 transition">
+          {/* Facebook SVG */}
+          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+          </svg>
+        </a>
+
+        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full shadow-md bg-white hover:bg-gray-100 transition">
+          {/* Twitter SVG */}
+          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+      </div>
+
+      {/* App Text */}
+      <p className="text-gray-600 text-sm mb-4 text-center lg:text-left">
+        Discover our app
+      </p>
+
+      {/* App Buttons */}
+      <div className="flex flex-wrap justify-center lg:justify-start gap-3">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Google Play"
+          className="h-10"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+          alt="App Store"
+          className="h-10"
+        />
+      </div>
+
+    </div>
+  </div>
+
+  {/* Bottom Text */}
+  <div className="mt-12 text-center text-gray-500 text-sm">
+    All rights reserved © jadoo.co
+  </div>
+</footer>
 
 
 
